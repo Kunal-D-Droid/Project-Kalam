@@ -127,9 +127,20 @@ p {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  color: #afafaf;
+  color: #020202;
 }
 
+.row-1{
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+  color: #020202;
+}
+.para {
+  color:#191a20;
+  font-size: 20px;
+}
 img {
   width: 100%;
   overflow: hidden;
@@ -500,13 +511,14 @@ header
 
 .header-area .main-nav .nav li:last-child a ,
 .background-header .main-nav .nav li:last-child a {
-  padding: 0px 20px !important;
+  padding: 0px 0px !important;
   font-weight: 400;
 }
 
 .header-area .main-nav .nav li:last-child a:hover ,
 .background-header .main-nav .nav li:last-child a:hover {
-  color: #fff !important;
+  color: rgb(43, 172, 231) !important;
+  padding-left: 10px ;
 }
 
 .header-area .main-nav .nav li a {
@@ -527,13 +539,13 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fa65b1!important;
+  color: #1ad3c3!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fa65b1!important;
-  opacity: 1;
+  color: #379e3c!important;
+  
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -2008,7 +2020,7 @@ form#contact button {
 
 form#contact button:hover {
   background-color: #fa65b1!important;
-  color: #fff!important;
+  color: rgb(17, 9, 9)!important;
 }
 
 /* 
