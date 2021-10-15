@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clean Blog - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles-1.css" rel="stylesheet" />
+        <link href="index.html" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Project Kalam</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="blog.html">Blogs</a></li> 
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Space Complexity</h1>
+                            <!-- <span class="subheading">A Blog Theme by Start Bootstrap</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    
+                    <div class="post-review">
+                        <h2 class="post-title">Significance Of Space Complexity</h2> 
+                        <!-- <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3> -->
+                         <p class="post-meta">
+                            Space complexity, like <b>time complexity</b> is also an important parameter in determining the efficiency of a program. Here we will get to know about what is time complexity and its significance and how to calculate it.
+                        </p>
+                        <h4>What is Space Complexity?</h4> 
+                        <p><b>Space Complexity</b> of an algorithm or program is the total amount of memory or space taken by an algorithm as a function of the size of input. Let’s try in simple words, it is the memory required by an algorithm to execute a program and produce output. From this we can say space complexity is a parallel concept to time complexity.</p>
+                        Algorithm mainly uses memory space for three vital reasons:
+                        <br><br>1.	<b>Instruction Space</b>
+                        <br><br>It is the quantity of memory required to save the compiled version of algorithm/program instructions.
+                        <br><br>2.	<b>Environmental Stack</b>
+                        <br><br>Sometimes an algorithm (function) could also be called inside another algorithm (function). In this type of situation, current variables are pushed onto the system stack, where they wait for further execution and then the call to the inside algorithm (function) is made.
+                        <br><br>Let’s take an good example to understand more clearly, if a function X() calls function Y() inside it, then all the variables of the function X() will get stored on the system stack temporarily, while the function Y() is called and executed inside the function X().
+                        <br><br>3.	<b>Data Space</b>
+                        <br><br>It defines the amount of space used by the variables and constants.
+                        <br><br>When we want to find the space complexity of an algorithm; we consider only the <b>data space</b> used in the algorithm i.e., we calculate only the space used by the variables and constants in the algorithm.
+                        <br><br>But many a time, <b>Auxiliary Space</b> is often get confused with Space Complexity. Auxiliary Space is the temporary space allocated by the algorithm while it is executed.
+                        <br><br><b>Space Complexity = Auxiliary Space + Input Space</b>
+                        <br><br>Sometimes, while calculating the <b>Space Complexity</b> of any algorithm, we usually consider only <b>Auxiliary space</b> and we neglect the <b>input space.</b>
+
+
+                            </p>
+                            <br><br><h4>Notations Used in Space Complexity</h4>
+                            <p>We have already discussed Time Complexity, if you haven’t do surely read that…
+                                The time complexity of an algorithm is commonly expressed using the <b>Big O notation</b> as discussed, which is an asymptotic notation to represent the time complexity. 
+                                Space complexity, is like time complexity, is often expressed asymptotically in <b>Big-O notation</b>, such as O(n), O(nlog(n)), O(n^2), etc., where n is the input size in units of bits needed to represent the input.
+                                </p>
+                                <br><h4>Significance of Space Complexity</h4>
+                            <p>For calculating the space complexity, we need to know the value of memory used by different types of data-type variables, which generally it varies for different operating systems, but the method for all calculations remains the same.
+                                </p>
+                                <img src="assets/images/table.png" style="width: 700px;">
+                                <p>Now, let us try to learn how to calculate space complexity by taking a few examples:</p>
+                                <img src="assets/images/ss1.png">
+                                <p>We can see in the above expression, variables a, b, c and z are all integer types, hence they will take up 4 bytes each. Also, an additional 4 bytes are used up by the system. So, as per the total memory requirement will be (4(4) + 4) = 20 bytes. The additional 4 bytes is for <b>return value</b> and since this space requirement is fixed for the above example, hence it is called <b>Constant Space Complexity.</b></p>
+                                <br>Let's have another example,
+                                <img src="assets/images/ss2.png">
+                                <br><p>In the above code, 4n bytes of space is required for the array a[] and 4 bytes each for variables  x, n, i and the return value. Therefore, the total memory required will be (4n + 12) bytes, that increases linearly with the increase in the input value n, hence it is known as <b>Linear Space Complexity</b>.
+                                    <br>Similarly, as the complexity of an algorithm increases, we can have quadratic and other complex space complexity as well.
+                                    <br>However, we should always focus on writing algorithm code in such a way that we keep the memory used up by the system to run the program to a <b>minimum</b>.
+                                    </p>
+                                <br><h4>Linear Space Complexity</h4>      
+                                <img src="assets/images/table2.png" style="width: 700px;">
+                                <br><br><img src="assets/images/table3.png" style="width: 700px;">
+                                            <br>If you have learnt something new in this blog, do share it and do read our “Significance of Space Complexity” 
+                                            </p>
+                    </div>
+                    <!-- Divider-->
+                    <!-- <hr class="my-4" />
+                     Post preview-->
+                    <!-- <div class="post-preview">
+                        <a href="post.html"><h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2></a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on September 18, 2021
+                        </p>
+                    </div>
+                     Divider-->
+                    <!-- <hr class="my-4" />
+                    Post preview-->
+                    <!-- <div class="post-preview">
+                        <a href="post.html">
+                            <h2 class="post-title">Science has not yet mastered prophecy</h2>
+                            <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on August 24, 2021
+                        </p>
+                    </div> --> 
+                    <!-- Divider-->
+                    <!-- <hr class="my-4" /> -->
+                    <!-- Post preview-->
+                    <!-- <div class="post-preview">
+                        <a href="post.html">
+                            <h2 class="post-title">Failure is not an option</h2>
+                            <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on July 8, 2021
+                        </p>
+                    </div> -->
+                    <!-- Divider-->
+                    <!-- <hr class="my-4" />
+                     Pager-->
+                    <!-- <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+                </div> -->
+            <!-- </div>
+        </div> --> 
+        <!-- Footer-->
+        <!-- <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul> 
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2021</div>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+ <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <p>Copyright © 2022 Project Kalam. All Rights Reserved. 
+                  <!-- <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p> -->
+                </div>
+              </div>
+            </div>
+</footer>        
+    </body>
+</html>
